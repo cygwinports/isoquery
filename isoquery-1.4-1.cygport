@@ -1,0 +1,8 @@
+inherit waf
+
+DESCRIPTION="Search and display ISO country and language names"
+HOMEPAGE="http://alioth.debian.org/projects/pkg-isocodes/"
+#SRC_URI="ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/${P}.tar.bz2"
+SRC_URI="mirror://debian/pool/main/i/${PN}/${PN}_${PV}.orig.tar.bz2"
+
+WAF=./waf
