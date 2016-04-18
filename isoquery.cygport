@@ -1,8 +1,6 @@
-inherit distutils
-
 NAME="isoquery"
-VERSION=1.7
-RELEASE=2
+VERSION=2.0
+RELEASE=1
 CATEGORY="Text"
 SUMMARY="Search and display ISO country and language names"
 DESCRIPTION="isoquery can be used to generate a tabular output of the ISO
@@ -11,8 +9,6 @@ files and shows all included ISO codes or just matching entries, if
 specified on the command line. Moreover, it's possible to get all
 available translations for the ISO standard."
 HOMEPAGE="http://alioth.debian.org/projects/pkg-isocodes/"
-#SRC_URI="ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/${P}.tar.bz2"
-SRC_URI="mirror://debian/pool/main/i/${PN}/${PN}_${PV}.orig.tar.bz2"
-PATCH_URI="01-rst2man.patch"
+SRC_URI="http://pkg-isocodes.alioth.debian.org/downloads/isoquery-${VERSION}.tar.xz"
 
-REQUIRES="iso-codes"
+export RST2MAN="/usr/bin/rst2man.py"
